@@ -1,0 +1,125 @@
+<html>
+<head>
+
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T8QZBRL');</script>
+<!-- End Google Tag Manager -->
+
+	<link rel="manifest" href="\manifest.json">
+	
+
+
+<!--<script type="text/javascript">
+	var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
+	// replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+clevertap.account.push({"id": "545-4W6-WK5Z"});
+clevertap.privacy.push({optOut: false}); //set the flag to true, if the user of the device opts out of sharing their data
+clevertap.privacy.push({useIP: false}); //set the flag to true, if the user agrees to share their IP data
+(function () {
+		 var wzrk = document.createElement('script');
+		 wzrk.type = 'text/javascript';
+		 wzrk.async = true;
+		 wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js';
+		 var s = document.getElementsByTagName('script')[0];
+		 s.parentNode.insertBefore(wzrk, s);
+  })();-->
+
+  <script type="text/javascript">
+
+// function OnUserLogin()
+// {
+
+// 	var Strname=document.getElementById("name1").value;
+// 	var Stremail=document.getElementById("email1").value;
+// 	var strphone=document.getElementById("phone1").value;
+
+// 	console.log(Strname);
+
+// clevertap.onUserLogin.push({
+//  "Site": {
+//    "Name": Strname, // User's name
+//    "Email": Stremail,
+//    "Phone": strphone
+      
+//  }})
+
+// console.log("username and email registered");
+// };
+
+
+// function profilepush()
+// {
+
+// 	var Strname=document.getElementById("name1").value;
+// 	var Stremail=document.getElementById("email1").value;
+// 	var strphone=document.getElementById("phone1").value;
+
+// clevertap.profile.push({
+//  "Site": {
+//    "Name": Strname, 
+//    "Email": Stremail,
+//    "Phone": strphone
+
+// }})
+//  console.log("username and email registered");
+// }
+
+
+ // clevertap.notifications.push({
+ //    "titleText":'Would you like to receive Push Notifications?',
+ //    "bodyText":'We promise to only send you relevant content and give you updates on your transactions',
+ //    "okButtonText":'Sign me up!',
+ //    "rejectButtonText":'No thanks',
+ //    "okButtonColor":'#f28046'});
+
+</script>
+</head>
+
+<body>
+
+
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8QZBRL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+	<form>
+<table border='1'>
+	<TR>
+		<th colspan="4">Enter your details</th>
+	</TR>
+	<tr>
+		<td width="100%" colspan="4"></td>
+	</tr>
+<tr>
+	<td>Name:</td>
+<td><input type="text" name="username" id="name1" placeholder="Enter your name"></td>
+</tr>
+
+<tr>
+	<td>Email:</td>
+<td><input type="Email" name="email" id="email1" placeholder="Enter your Email ID" autocomplete="on"></td>
+</tr>
+
+<tr>
+	<td>Phone:</td>
+<td><input type="tel" name="Phone" id="phone1" placeholder="Enter your phone number" autocomplete="on"></td>
+</tr>
+</table>
+
+<button  type="button" onclick="dataLayer.push({'event': 'ProfilePushbuttonclicked'});">Profile Push</button> 
+<!--<button type="button" onclick="profilepush()">Profile Push</button>-->
+<br>
+
+<button type="button" onclick="dataLayer.push({'event': 'OnUserLoginbuttonclicked'});">OnUserLogin</button> 
+
+<!--<button type="button" onclick="OnUserLogin()">On User Login</button>-->
+
+</form>
+</body>
+</html>
